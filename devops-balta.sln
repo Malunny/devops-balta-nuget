@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculib", "Calculib\Calculib.csproj", "{8D8AE7D1-F735-4C2C-B9C2-439ACD6D6845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculibTests", "CalculibTests\CalculibTests.csproj", "{4121FAB2-5A5A-4C22-BFF3-39654A2B87F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D8AE7D1-F735-4C2C-B9C2-439ACD6D6845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8AE7D1-F735-4C2C-B9C2-439ACD6D6845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8AE7D1-F735-4C2C-B9C2-439ACD6D6845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8AE7D1-F735-4C2C-B9C2-439ACD6D6845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4121FAB2-5A5A-4C22-BFF3-39654A2B87F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4121FAB2-5A5A-4C22-BFF3-39654A2B87F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4121FAB2-5A5A-4C22-BFF3-39654A2B87F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4121FAB2-5A5A-4C22-BFF3-39654A2B87F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
