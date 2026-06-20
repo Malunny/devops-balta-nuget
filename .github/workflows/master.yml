@@ -1,0 +1,34 @@
+name: build and deploy package
+
+on:
+  push:
+    branches:
+      - master
+ 
+jobs: 
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: get repo code
+        uses: actions/checkout@v6
+        
+      - name: set up dotnet lts
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: latest
+          dotnet-channel: LTS
+      
+      - name: build with dotnet
+        run: dotnet build --configuration Release
+      
+      - name: run tests
+        run: dotnet test
+      
+      - name: create package
+        run: dotnet pack --configuration Release
+      
+      - name: publish
+        run: dotnet nuget push "Calculib/bin/Release/*.nupkg" -k ${{ secrets.NUGET_APIKEY }} -s https://api.nuget.org/v3/index.json
+      
+      
