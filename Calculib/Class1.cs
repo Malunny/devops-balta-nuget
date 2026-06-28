@@ -10,4 +10,7 @@ public class CalcLib
 
         return sum;
     }
+
+    public decimal QuadraticFunction(decimal x, decimal a, decimal b, decimal c)
+        => (a * (x * x)) + (b * x) + c;
 }

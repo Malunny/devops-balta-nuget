@@ -30,5 +30,3 @@ jobs:
       
       - name: publish
         run: dotnet nuget push "Calculib/bin/Release/*.nupkg" -k ${{ secrets.NUGET_APIKEY }} -s https://api.nuget.org/v3/index.json
-      
-      
