@@ -31,5 +31,8 @@ jobs:
       - name: publish on nuget
         run: dotnet nuget push "Calculib/bin/Release/*.nupkg" -k ${{ secrets.NUGET_APIKEY }} -s https://api.nuget.org/v3/index.json
       
-      - name: publish on github packages
+      - name: add source github packages
         run: dotnet nuget add source --username Malunny --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/Malunny/index.json"
+      
+      - name: publish on github packages
+        run: dotnet nuget push "Calculib/bin/Release/*.nupkg" -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/Malunny/index.json --skip-duplicate
