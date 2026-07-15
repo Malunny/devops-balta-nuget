@@ -2,7 +2,7 @@
 
 public class CalcLib
 {
-    public decimal Sum(params IEnumerable<decimal> numbers)
+    public decimal Sum(IEnumerable<decimal> numbers)
     {
         List<decimal> numbersList = numbers.ToList();
         
@@ -13,4 +13,23 @@ public class CalcLib
 
     public decimal QuadraticFunction(decimal x, decimal a, decimal b, decimal c)
         => (a * (x * x)) + (b * x) + c;
+
+    public decimal Lowest(params decimal[] numbers)
+    {
+        decimal lowest = 0;
+        bool first = true;
+        foreach (var num in numbers)
+        {
+            if (first)
+            {
+                lowest = num;
+                first = false;
+                continue;
+            }
+            if (lowest > num)
+                lowest = num;
+        }
+        
+        return lowest;
+    }
 }
