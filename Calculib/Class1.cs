@@ -14,7 +14,7 @@ public class CalcLib
     public decimal QuadraticFunction(decimal x, decimal a, decimal b, decimal c)
         => (a * (x * x)) + (b * x) + c;
 
-    public decimal Lowest(params decimal[] numbers)
+    public decimal Lowest(IEnumerable<decimal> numbers)
     {
         decimal lowest = 0;
         bool first = true;
