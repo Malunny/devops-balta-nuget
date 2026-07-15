@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         
         <PackageId>Calculib</PackageId>
-        <Version>0.0.6</Version>
+        <Version>0.0.7</Version>
         <Authors>Dev7Jhonny</Authors>
         <Description>A study about dev-ops and nuget.</Description>
         <RepositoryUrl>https://github.com/Malunny/devops-balta-nuget</RepositoryUrl>
