@@ -5,7 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         
-        <PackageId>Malunny.Calculib</PackageId>
+        <PackageId>Calculib</PackageId>
         <Version>0.0.6</Version>
         <Authors>Dev7Jhonny</Authors>
         <Description>A study about dev-ops and nuget.</Description>
