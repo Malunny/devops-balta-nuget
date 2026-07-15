@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - master
+
+workflow:
+  auto_cancel:
+    on_job_failure: all
  
 jobs: 
   build-and-deploy:
